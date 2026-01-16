@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NessusClientData_v2>
+  <Report name="Sample">
+    <ReportHost name="192.0.2.10">
+      <HostProperties>
+        <tag name="host-ip">192.0.2.10</tag>
+      </HostProperties>
+
+      <ReportItem port="3389" protocol="tcp" svc_name="ms-wbt-server" severity="4"
+                  pluginID="56984" pluginName="MS Windows RDP NLA disabled">
+        <risk_factor>Critical</risk_factor>
+        <cve>CVE-2019-0708</cve>
+        <plugin_output>Remote RDP allows unauthenticated connections. NLA disabled.</plugin_output>
+      </ReportItem>
+
+      <ReportItem port="80" protocol="tcp" svc_name="http" severity="1"
+                  pluginID="11219" pluginName="HTTP TRACE Method Enabled">
+        <risk_factor>Low</risk_factor>
+        <plugin_output>TRACE method enabled.</plugin_output>
+      </ReportItem>
+    </ReportHost>
+
+    <ReportHost name="198.51.100.5">
+      <HostProperties>
+        <tag name="host-ip">198.51.100.5</tag>
+      </HostProperties>
+
+      <ReportItem port="22" protocol="tcp" svc_name="ssh" severity="2"
+                  pluginID="10267" pluginName="SSH Weak Algorithms Supported">
+        <risk_factor>Medium</risk_factor>
+        <plugin_output>Server supports diffie-hellman-group1-sha1.</plugin_output>
+      </ReportItem>
+
+      <ReportItem port="443" protocol="tcp" svc_name="https" severity="3"
+                  pluginID="35291" pluginName="TLS/SSL Server Supports RC4 Cipher Algorithms">
+        <risk_factor>High</risk_factor>
+        <cve>CVE-2013-2566</cve>
+        <plugin_output>RC4 cipher suites detected.</plugin_output>
+      </ReportItem>
+    </ReportHost>
+  </Report>
+</NessusClientData_v2>
