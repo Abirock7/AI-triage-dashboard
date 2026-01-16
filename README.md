@@ -19,4 +19,7 @@ This project is an AI-driven security triage platform designed to help Security 
 - Streamlit
 - Splunk
 
+![n-1](https://github.com/user-attachments/assets/faecdd93-2d50-4e00-b611-f5b98e79b962)
+![n-2](https://github.com/user-attachments/assets/19b234d9-59ea-4d2f-b89f-9003f50f168b)
+![n-3](https://github.com/user-attachments/assets/e15a21fc-a891-4f54-adf3-df899753c76b)
 
